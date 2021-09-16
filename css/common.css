@@ -1,0 +1,88 @@
+
+  * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+    -webkit-text-size-adjust:none;  }
+    body {font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size:20px; color:#333;}
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+    ul, ol, dl { list-style:none; }
+    img, video {border:0; vertical-align:top; }
+    a, a:link {color:#333;text-decoration:none; }
+    a:visited { color:#333; }
+    a:hover, a:active {color:#333;text-decoration:none; }
+    table { border-collapse:collapse; border-spacing:0; }
+    input, select { vertical-align:middle; }
+    label { cursor:pointer; }
+    .blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+    i,em,address { font-style:normal; font-weight:normal; }
+    p,li,dd{ line-height:2em}
+    .hidden,#skipNav{display: block; position: absolute; left: -1000%; top: 0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+    a{display: block}
+    
+    /*font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Noto Sans KR', sans-serif;*/
+    
+    
+    #headerArea{position: fixed; z-index: 30; height: 90px; background: rgba(0, 0, 0, 0.9); left: 0; top: 0; width: 100%}
+    #headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: hidden}	
+    #headerArea h1 a{width: 450px; height: 60px; background: url("../img/G.png") no-repeat; text-indent: -999px; overflow: hidden; color: #fff; margin: 10px 0; float: left}
+    
+    #headerArea #gnb{float: right; margin-top: 35px}
+    #headerArea #gnb ul{overflow: hidden}
+    #headerArea #gnb ul li{float: left; margin-right: 25px}
+    #headerArea #gnb ul li:last-child{margin-right: 0}
+    #headerArea #gnb ul li h3 a{color: #fff; font-size: 32px; font-weight: 400}
+    
+    #headerArea .menuOpen{position:absolute; right:20px; top:20px; display:none}
+    
+    
+    #footerArea{text-align: center; background: #666}
+    #footerArea p,address{padding: 30px 0; color: #fff}
+    
+    
+    @media screen and (max-width:1280px) {
+        body{font-size: 18px}
+        
+        #headerArea{height: 70px}
+        #headerArea h1 a{width: 360px; height: 48px; background-size: 360px 48px}
+        #headerArea #gnb{margin-top: 25px}
+        #headerArea #gnb ul li h3 a{font-size: 28px}
+    }
+    
+    
+    
+    @media screen and (max-width:1024px) {
+        body{font-size: 16px}
+        
+        #headerArea	.headerInner{width: 94%; margin: 0 3%}	
+        #headerArea h1 a{width: 290px; height: 40px; background-size: 290px 40px; margin-top: 18px}
+    
+        #headerArea #gnb ul li{margin-right: 20px}
+        #headerArea #gnb ul li h3 a{font-size: 24px}
+        
+        #footerArea p,addredd{font-size: 16px}
+    }
+    
+    
+    @media screen and (max-width:768px) {
+        #headerArea{height: 60px}
+        #headerArea	.headerInner{width: 96%; margin: 0 2% ;}	
+        #headerArea h1 a{width: 217px; height: 30px; background-size: 217px 30px; margin-top: 15px}
+    
+        #headerArea #gnb ul li h3 a{font-size: 24px}
+        #headerArea .menuOpen{display: block; font-size: 24px;color: #fff}
+        #headerArea .mainMenu{width:100%; background:rgba(0,0,0,.5); display:none; position:absolute; top:60px; left:0; padding-top: 10px}
+        #headerArea .mainMenu li{float:none; width: 100%; margin-bottom:10px; text-align:center; padding: 10px 0}
+        
+        #footerArea p,addredd{font-size: 14px}
+    }
+    
+   
+    @media screen and (max-width:640px) {
+        body{font-size: 14px}
+        
+        #footerArea p,addredd{padding: 10px 0; font-size: 12px}
+    }
+    
+    
+    @media screen and (max-width:480px) {
+        #wrap { min-width:320px; }
+    }
